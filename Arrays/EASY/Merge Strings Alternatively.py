@@ -52,11 +52,11 @@ class Solution(object):
 
         # Append the remaining characters from word1 and word2
         while i < len(word1):
-            result.append(word1[i])
+            result.append(word1[i:])
             i += 1
 
         while j < len(word2):
-            result.append(word2[j])
+            result.append(word2[j:])
             j += 1
 
         # Return the merged string  
