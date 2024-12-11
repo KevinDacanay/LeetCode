@@ -29,7 +29,7 @@ Only one valid answer exists.
 
 import java.util.HashMap;
 
-class Solution {
+class TwoSum {
     public int[] twoSum(int[] nums, int target) {
         // Create a HashMap to store the numbers and their indices
         HashMap<Integer, Integer> map = new HashMap<>();
