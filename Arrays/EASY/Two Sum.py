@@ -26,19 +26,18 @@ Constraints:
 Only one valid answer exists.
 '''
 
-class Solution(object):
-    def twoSum(self, nums, target):
-        indices = {}
+def twoSum(nums, target):
+    indices = {}
 
-        for index, value in enumerate(nums):
-            # take the complement 
-            complement = target - value
-            # Check if the complement value is in the set
-            if complement in indices:
-                # Return the current index of the loop and the index of the complement from the set
-                return [index, indices[complement]]
-            # Put the index of the value in the set    
-            indices[value] = index
-            
-        # Return None if no solution is found
-        return None
+    for index, value in enumerate(nums):
+        # take the complement 
+        complement = target - value
+        # Check if the complement value is in the set
+        if complement in indices:
+            # Return the current index of the loop and the index of the complement from the set
+            return [index, indices[complement]]
+        # Put the index of the value in the set    
+        indices[value] = index
+        
+    # Return None if no solution is found
+    return None
