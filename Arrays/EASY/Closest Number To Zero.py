@@ -27,24 +27,23 @@ Constraints:
 -105 <= nums[i] <= 105
 '''
 
-class Solution(object):
-    def findClosestNumber(self, nums):
-        
-        # Initialize minimum to be a big number "infinity"
-        minimum = float('inf')
+def findClosestNumber(nums):
+    
+    # Initialize minimum to be a big number "infinity"
+    minimum = float('inf')
 
-        # Iterate through each number in nums
-        for i in nums:
-            # Set variable 'a' to be the absolute value of the minimum
-            a = abs(minimum)
-            # Check if the absolute value of i is less than a:
-            if abs(i) < a:
-                # If it is, update the minimum to be i
+    # Iterate through each number in nums
+    for i in nums:
+        # Set variable 'a' to be the absolute value of the minimum
+        a = abs(minimum)
+        # Check if the absolute value of i is less than a:
+        if abs(i) < a:
+            # If it is, update the minimum to be i
+            minimum = i
+        # If the absolute value of i is equal to a:
+        elif i == a:
+            # If i is greater than the current minimum, update the minimum to be i
+            if i > minimum: 
                 minimum = i
-            # If the absolute value of i is equal to a:
-            elif i == a:
-                # If i is greater than the current minimum, update the minimum to be i
-                if i > minimum: 
-                    minimum = i
-        # Return the minimum
-        return minimum
+    # Return the minimum
+    return minimum
