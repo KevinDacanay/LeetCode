@@ -40,7 +40,7 @@ class TwoSum {
             
             // Check if the complement exists in the map
             if (map.containsKey(complement)) {
-                // Return the indices of the two numbers that add up to the target
+                // Return the indices of the two numbers that add up to the target 
                 return new int[] { map.get(complement), i };
             }
             
