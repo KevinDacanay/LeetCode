@@ -37,27 +37,26 @@ Constraints:
 word1 and word2 consist of lowercase English letters.
 '''
 
-class Solution(object):
-    def mergeAlternately(self, word1, word2):
+def mergeAlternately(word1, word2):
 
-        result = []     # Result will contain the merged words
-        i, j = 0, 0     # initialize pointers for each word
+    result = []     # Result will contain the merged words
+    i, j = 0, 0     # initialize pointers for each word
 
-        # Merge words alternatively by using pointers incrementally
-        while i < len(word1) and j < len(word2):
-            result.append(word1[i])
-            result.append(word2[j])
-            i += 1
-            j += 1
+    # Merge words alternatively by using pointers incrementally
+    while i < len(word1) and j < len(word2):
+        result.append(word1[i])
+        result.append(word2[j])
+        i += 1
+        j += 1
 
-        # Append the remaining characters from word1 and word2
-        while i < len(word1):
-            result.append(word1[i:])
-            i += 1
+    # Append the remaining characters from word1 and word2
+    while i < len(word1):
+        result.append(word1[i:])
+        i += 1
 
-        while j < len(word2):
-            result.append(word2[j:])
-            j += 1
+    while j < len(word2):
+        result.append(word2[j:])
+        j += 1
 
-        # Return the merged string  
-        return "".join(result)
+    # Return the merged string  
+    return "".join(result)
