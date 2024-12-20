@@ -6,21 +6,11 @@ of the characters without disturbing the relative positions of the remaining cha
 
 
 Example 1:
-
-Input: s = "abc", t = "ahbgdc"
-Output: true
+    Input: s = "abc", t = "ahbgdc"
+    Output: true
 Example 2:
-
-Input: s = "axc", t = "ahbgdc"
-Output: false
- 
-
-Constraints:
-
-0 <= s.length <= 100
-0 <= t.length <= 104
-s and t consist only of lowercase English letters.
-
+    Input: s = "axc", t = "ahbgdc"
+    Output: false
 '''
 
 def isSubsequence(s, t):
