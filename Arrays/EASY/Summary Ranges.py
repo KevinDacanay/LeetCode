@@ -30,21 +30,4 @@ Example 2:
 '''
 nums = [0,2,3,4,6,8,9]
 
-ranges = [] 
-length = len(nums)
 
-# Iterate over the length of nums 
-i = 0
-while i != length:
-    # Check if nums[i] + 1 != num[i + 1]:
-    if nums[i] + 1 is None:
-        break
-    
-    elif nums[i] + 1 == (nums[i + 1]):
-        ranges.append(i)
-        ranges.append(",")
-        i += 1
-    else:
-        i += 1
-
-print(ranges)
