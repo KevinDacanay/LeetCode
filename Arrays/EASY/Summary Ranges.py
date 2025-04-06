@@ -30,4 +30,7 @@ Example 2:
 '''
 nums = [0,2,3,4,6,8,9]
 
+start = 0
+ranges = []     # range to be returned
+n = len(nums)   # get length of nums
 
