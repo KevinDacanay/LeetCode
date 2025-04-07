@@ -28,9 +28,39 @@ Example 2:
     [6,6] --> "6"
     [8,9] --> "8->9"
 '''
-nums = [0,2,3,4,6,8,9]
+def summary_ranges(nums):
+    # Initialize index and result list
+    i = 0
+    ranges = []
 
-start = 0
-ranges = []     # range to be returned
-n = len(nums)   # get length of nums
+    # Iterate through the input list
+    while i < len(nums):
+        # Mark the start of a new range
+        start = nums[i]
+        
+        # Check for consecutive numbers
+        while i < len(nums) - 1 and nums[i] + 1 == nums[i + 1]:
+            # Move to the next number
+            i += 1
 
+        # If the range consists of only one number, append it as a string
+        if start != nums[i]:
+            # Append the range as a string in the format "start->end"
+            ranges.append(f"{start}->{nums[i]}")
+        else:
+            # Append the single number as a string
+            ranges.append(str(start))
+        
+        # Move to the next number
+        i += 1
+    
+    # Return the list of ranges
+    return ranges
+
+# Test cases
+print(summary_ranges([0, 2, 3, 4, 6, 8, 9]))  # Output: ["0", "2->4", "6", "8->9"]
+print(summary_ranges([0, 1, 2, 4, 5, 7]))  # Output: ["0->2", "4->5", "7"]
+print(summary_ranges([0]))  # Output: ["0"]
+print(summary_ranges([]))  # Output: []
+print(summary_ranges([1, 2, 3, 4, 5]))  # Output: ["1->5"]
+print(summary_ranges([1, 3, 5, 7, 9]))  # Output: ["1", "3", "5", "7", "9"]
