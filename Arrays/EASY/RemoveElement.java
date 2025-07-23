@@ -45,8 +45,6 @@ public class RemoveElement {
         int j = 1;
         int count = 0;
 
-        
-        
         return count;
     }
 
