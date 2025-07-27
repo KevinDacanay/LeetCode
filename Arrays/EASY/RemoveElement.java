@@ -40,12 +40,25 @@
 
 public class RemoveElement {
     public static int removeElement(int[] nums, int val) {
-
+        
+        // n will be used as the index to switch elements to the 
+        // end of the array as well as to keep track as well as to keep
+        // track of the number of elements that are not equal to val since
+        // we decrement n each time nums[i] == val. 
+        int n = nums.length;   
         int i = 0;
-        int j = 1;
-        int count = 0;
-
-        return count;
+        while (i < n) {
+            if (nums[i] == val) {
+                // move the current (equal to val) element to the end
+                nums[i] = nums[n - 1];
+                // decrement n (move it leftward)
+                n--;
+            } else {
+                // incremenet i if not nums[i] != val
+                i++;
+            }
+        }
+        return n;
     }
 
     public static void main(String[] args) {
