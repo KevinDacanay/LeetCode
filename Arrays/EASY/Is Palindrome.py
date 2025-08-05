@@ -22,7 +22,7 @@ Example 3:
     Since an empty string reads the same forward and backward, it is a palindrome.
 """
 
-def isPalindrome1(s):
+def isPalindrome(s):
     # get rid of all non alphanumeric characters:
         word = ''.join([char for char in s if char.isalnum()])
         # get rid of capital letters
@@ -40,3 +40,10 @@ def isPalindrome1(s):
             else:
                 return False
         return True
+
+s1 = "A man, a plan, a canal: Panama"
+s2 = "race A car"
+s3 = " "
+print(isPalindrome(s1))
+print(isPalindrome(s2))
+print(isPalindrome(s3))
