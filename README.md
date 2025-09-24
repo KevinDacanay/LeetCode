@@ -1,13 +1,13 @@
-# 🧩 LeetCode Problem Solutions 💻
+# 🧩 LeetCode Problems 💻
 
 ## 🌟 About This Repository
 
 Welcome to my personal collection of LeetCode problem solutions! This repository is a comprehensive record of my journey solving algorithmic challenges and improving my coding skills.
 
-
 ## 💡 Languages Used
 - Python 🐍
 - Java ☕
+- C++ 👩‍💻
 
 ## 🛠 How to Use This Repository
 
@@ -35,15 +35,15 @@ Feel free to:
 - [LeetCode Official Site](https://leetcode.com/)
 - [AlgoExpert](https://www.algoexpert.io/)
 - [HackerRank](https://www.hackerrank.com/)
+- [Algomap.io](https://www.algomap.io/)
+- [NeetCode](https://neetcode.io/roadmap)
 
 ## 🏆 Goals
 
-- Solve 100 problems across all difficulty levels
+- Solve at least 100 problems across all difficulty levels
 - Improve algorithmic thinking
 - Prepare for technical interviews
 
 ## 📝 Disclaimer
 
-Solutions are my personal attempts and may not always represent the most optimal approach. Always think critically and explore multiple solutions! 🧠
-
-Happy Coding! 🚀👩‍💻👨‍💻
+Solutions are my personal attempts and may not always represent the most optimal approach. Always think critically and explore multiple solutions! 
