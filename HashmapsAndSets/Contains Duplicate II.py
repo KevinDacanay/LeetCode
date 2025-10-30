@@ -20,9 +20,6 @@ def contains_duplicate(nums, k):
     for i in range(len(nums)):
         # print(seen)
         if nums[i] in seen:
-            # print(nums[i])
-            # # print(((seen.get(nums[i]) - i)))
-            # print(seen.get(nums[i]))
             if abs(seen.get(nums[i]) - i) <= k:
                 return True
         seen[nums[i]] = i
