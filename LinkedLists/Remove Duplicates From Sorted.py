@@ -7,7 +7,8 @@ Example 1:
 Example 2:
     Input: head = [5,1,2,3,3]
     Output: [4,2,3]
-"""
+
+    """
 def delete_duplicates(head):
     h = head
     while head and head.next:
